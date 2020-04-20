@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/darolpz/workshop/types/helper"
+	"github.com/darolpz/workshop/01_types/helper"
 )
 
 func main() {

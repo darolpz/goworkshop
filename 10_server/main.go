@@ -9,6 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// Function which start the server
 func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", index).Methods("GET")
@@ -20,6 +21,7 @@ func main() {
 
 /* Write plain text */
 /* curl localhost:4000 */
+// index start
 func index(w http.ResponseWriter, req *http.Request) {
 	w.WriteHeader(http.StatusOK)
 
