@@ -7,10 +7,11 @@ func main() {
 	var human Human
 	student := Student{"Daro", "Lopez", 24}
 	teacher := Teacher{"Sergio", "Marquina", 32, "Historia"}
-	/* Student y teacher puede asignarse a variables de tipo Human */
-	human = student
-	human = teacher
 
+	human = student
+	sayName(human)
+	human = teacher
+	sayName(human)
 	fmt.Printf("%v \n", human.GetAge())
 
 	/* Tipo Student es valido como tipo Human */
@@ -40,18 +41,18 @@ type Teacher struct {
 	Subject   string
 }
 
-func (human Student) GetName() string {
-	return human.FirstName + human.LastName
+func (student Student) GetName() string {
+	return "Alumno " + student.FirstName + " " + student.LastName
 }
 
-func (human Teacher) GetName() string {
-	return human.FirstName + human.LastName
+func (teacher Teacher) GetName() string {
+	return "Profesor " + teacher.FirstName + " " + teacher.LastName
 }
 
-func (human Student) GetAge() int32 {
-	return human.Age
+func (student Student) GetAge() int32 {
+	return student.Age
 }
 
-func (human Teacher) GetAge() int32 {
-	return human.Age
+func (teacher Teacher) GetAge() int32 {
+	return teacher.Age
 }
