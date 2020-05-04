@@ -6,6 +6,8 @@ func main() {
 	//Slices
 	s := []int{1, 2, 3, 4}
 	fmt.Printf("%v\n", s)
+	fmt.Printf("len: %v\n", len(s))
+	fmt.Printf("capacidad: %v\n", cap(s))
 	s = append(s, 5)
 	fmt.Printf("%v\n", s)
 	/* Tipo de dato, longitud inicial y capacidad */
@@ -15,4 +17,5 @@ func main() {
 	/* No tiene problemas con agregar elementos mas alla de su capacidad, pero necesita una reasignacion de memoria */
 	slice = append(slice, 5)
 	fmt.Printf("%v\n", slice)
+
 }
