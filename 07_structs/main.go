@@ -1,6 +1,6 @@
 package main
 
-import "github.com/darolpz/workshop/04_structs/person"
+import "github.com/darolpz/workshop/07_structs/person"
 
 func main() {
 
